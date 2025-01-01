@@ -71,16 +71,16 @@ config.PNL = 5;         // Find the first 5 perfect numbers
 
 ## Core Logic
 
-1. **Prime Check**: We start by checking if `n` is a prime number, since Mersenne primes are related to prime exponents.
-2. **Mersenne Prime Generation**: Once a prime `n` is found, a Mersenne prime is generated using the formula:  
-   \[
-   M_n = 2^n - 1
-   \]
-3. **Perfect Number Generation**: For each valid Mersenne prime `M_n`, a perfect number is generated using the formula:
-   \[
-   P_n = 2^{(n-1)} \times (2^n - 1)
-   \]
-4. **Validation**: The generated perfect number is validated against the specified range (`LLN` to `ULN`) and digit length constraints (`LLD` to `ULD`).
+1. **Prime Check**: Checking if $n$ is a prime number.
+2. **Mersenne Prime Generation**: Once a prime $n$ is found, a Mersenne prime is generated using the formula:
+```math
+  M_n = 2^n - 1
+```
+4. **Perfect Number Generation**: For each valid Mersenne prime $M_n$, a perfect number is generated using the formula:
+```math
+  P_n = 2^{(n-1)} \times (2^n - 1)
+```
+5. **Validation**: The generated perfect number is validated against the specified range (`LLN` to `ULN`) and digit length constraints (`LLD` to `ULD`).
 
 ### Example Output:
 
